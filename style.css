@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    background:#2db84d;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header h1{
+    font-size:48px;
+}
+
+header p{
+    margin-top:8px;
+    font-size:20px;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:black;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:#181818;
+}
+
+.hero h2{
+    font-size:46px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.shop-btn{
+    background:#2db84d;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:#24963d;
+}
+
+.title{
+    text-align:center;
+    margin:50px 0 30px;
+    font-size:36px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(280px,1fr));
+    gap:30px;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:#222;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:20px 0 10px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+.card button{
+    background:#2db84d;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    margin-bottom:20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#24963d;
+}
+
+#about,
+#contact{
+    max-width:900px;
+    margin:70px auto;
+    padding:20px;
+    text-align:center;
+}
+
+#about h2,
+#contact h2{
+    margin-bottom:20px;
+    font-size:34px;
+}
+
+footer{
+    background:#1a1a1a;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+@media (max-width:768px){
+
+.products{
+    grid-template-columns:1fr;
+}
+
+.hero h2{
+    font-size:34px;
+}
+
+header h1{
+    font-size:36px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
